@@ -1,0 +1,17 @@
+texto = input("Digite uma frase: ")
+tamanho = len(texto) #A função len() retorna o número de caracteres em uma string, incluindo espaços e pontuação.
+texto_maiusculo = texto.upper() #A função upper() retorna a string em maiúsculas.
+texto_minusculo = texto.lower() #A função lower() retorna a string em minúsculas.
+slices = texto[0:5] #O operador de slice [0:5] retorna os primeiros 5 caracteres da string.
+
+print("Os primeiros 5 caracteres do texto são:", slices)#A função print() é usada para exibir o resultado na tela. O texto entre aspas é uma string que será exibida, e as variáveis são concatenadas usando vírgulas para mostrar os resultados das operações realizadas.
+print("O texto tem", tamanho, "caracteres.")
+print("Texto em maiúsculas:", texto_maiusculo)
+print("Texto em minúsculas:", texto_minusculo)
+
+palavra = input("Digite uma palavra: ") 
+if palavra in texto: 
+    print("A palavra está presente no texto.")
+else:
+    print("A palavra não está presente no texto.")
+
